@@ -84,7 +84,8 @@ a,a:visited{
 .middle{
     background-color: white;
     
-  padding: 1em;
+  padding:  1em;
+  
  
 }
 
@@ -97,4 +98,29 @@ a,a:visited{
 label{
     font-family: monospace;
     letter-spacing: 3px;
+}
+
+
+.format{
+    display: flex;
+    flex-direction: column;
+}
+
+.format>label{
+    margin-bottom:-5px ;
+}
+
+.format>input{
+
+}
+
+.sec{
+    display: flex;
+    gap:100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
