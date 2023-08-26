@@ -5,7 +5,7 @@
 }
 
 .left{
-    background-color: red;
+    
     flex:1;
     background-image: url("./bgimage1.jpg");
     background-size: cover;
@@ -38,7 +38,7 @@
 
 
 .right{
-    background-color: green;
+    
     flex:2;
 
 
