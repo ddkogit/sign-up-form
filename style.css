@@ -85,7 +85,7 @@ a,a:visited{
     background-color: white;
     
   padding:  1em;
-  
+
  
 }
 
@@ -104,6 +104,7 @@ label{
 .format{
     display: flex;
     flex-direction: column;
+ 
 }
 
 .format>label{
@@ -111,16 +112,38 @@ label{
 }
 
 .format>input{
+    border: 1px solid red;
+}
 
+.format>input:focus{
+           box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+      
 }
 
 .sec{
     display: flex;
     gap:100px;
+
 }
 
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
+
+input:valid{
+    border-color: #E5E7EB;
+}
+input:invalid{
+    border-color: red;
+}
+
+input:invalid::after {
+    content: "Invalid input"; /* Your error message goes here */
+    display: block;
+    color: red;
+    margin-top: 5px; /* Add spacing between the input and the message */
+    font-size: 12px; /* Adjust font size as needed */
+  }
