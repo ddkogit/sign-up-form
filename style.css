@@ -1,0 +1,45 @@
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    background-color: red;
+    flex:1;
+    background-image: url("./bgimage1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.semiblack{
+    background-color:rgba(8, 6, 6, 0.5); ;
+    display: flex;
+    align-items: center;
+    margin: 30% 0 0 0;
+    justify-content: center;
+    gap:10px
+   
+}
+.logoname{
+    font-family: "Norse", 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+    ``
+}
+
+.logopic{
+
+    height: 100px;
+    width: 100px;
+
+}
+
+
+
+.right{
+    background-color: green;
+    flex:2;
+
+
+}
