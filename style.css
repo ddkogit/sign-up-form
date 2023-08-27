@@ -139,11 +139,14 @@ input:valid{
 input:invalid{
     border-color: red;
 }
-
-input:invalid::after {
-    content: "Invalid input"; /* Your error message goes here */
-    display: block;
+input[type="email"]:invalid + .error-message::before {
+    content: "Invalid email format";
     color: red;
-    margin-top: 5px; /* Add spacing between the input and the message */
-    font-size: 12px; /* Adjust font size as needed */
-  }
+    display: block;
+}
+
+input[type="email"]:valid + .error-message::before {
+    content: "";
+    display: none;
+}
+
