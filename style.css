@@ -27,7 +27,9 @@ body{
     align-items: center;
     margin: 30% 0 0 0;
     justify-content: center;
-    gap:10px
+    gap:10px;
+    position: relative;
+    
    
 }
 .logoname{
@@ -85,6 +87,7 @@ a,a:visited{
     background-color: white;
     
   padding:  1em;
+ 
 
  
 }
@@ -130,6 +133,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 10px;
+        
 
 }
 
@@ -145,8 +149,18 @@ input[type="email"]:invalid + .error-message::before {
     display: block;
 }
 
-input[type="email"]:valid + .error-message::before {
+input[type="email"]:valid + .error-message::after {
     content: "";
     display: none;
 }
 
+@media screen and (max-width: 720px) {
+    .sec{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+            
+    
+    }
+    
+}
